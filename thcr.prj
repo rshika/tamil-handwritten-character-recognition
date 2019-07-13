@@ -1,0 +1,147 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="557866260" file="B:\Final yr project\matlab\thcr\thcr.prj" location="B:\Final yr project\matlab\thcr" name="thcr" preferred-package-location="B:\Final yr project\matlab\thcr\thcr\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>Tamil_HandwrittenCR</param.appname>
+    <param.icon>${PROJECT_ROOT}\thcr_resources\icon.ico</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}\thcr_resources\icon_48.png</file>
+      <file>${PROJECT_ROOT}\thcr_resources\icon_32.png</file>
+      <file>${PROJECT_ROOT}\thcr_resources\icon_24.png</file>
+      <file>${PROJECT_ROOT}\thcr_resources\icon_16.png</file>
+    </param.icons>
+    <param.version>1.0</param.version>
+    <param.authnamewatermark />
+    <param.email />
+    <param.company />
+    <param.summary />
+    <param.description />
+    <param.screenshot>C:\Users\yogesh\Documents\FFOutput\flashscreen.jpg</param.screenshot>
+    <param.guid />
+    <param.installpath.string>\Tamil_HandwrittenCR\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\thcr\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\thcr\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\thcr\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\thcr</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>false</param.web.mcr>
+    <param.package.mcr>true</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <unset>
+      <param.version />
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.summary />
+      <param.description />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.embed.ctf />
+      <param.target.type />
+      <param.support.packages />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\Home.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\featureout.mat</file>
+      <file>${PROJECT_ROOT}\net.mat</file>
+      <file>${PROJECT_ROOT}\x.mat</file>
+      <file>${PROJECT_ROOT}\y.mat</file>
+    </fileset.resources>
+    <fileset.package />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\create_target_metrics.m</file>
+      <file>${PROJECT_ROOT}\crop_image.m</file>
+      <file>${PROJECT_ROOT}\feature_extract.m</file>
+      <file>${PROJECT_ROOT}\Home.fig</file>
+      <file>${PROJECT_ROOT}\input_target.fig</file>
+      <file>${PROJECT_ROOT}\input_target.m</file>
+      <file>${PROJECT_ROOT}\line_classifier.m</file>
+      <file>${PROJECT_ROOT}\line_separator.m</file>
+      <file>${PROJECT_ROOT}\myFeatureScript.m</file>
+      <file>${PROJECT_ROOT}\test.m</file>
+      <file>${PROJECT_ROOT}\train.m</file>
+      <file>${PROJECT_ROOT}\training_interface.fig</file>
+      <file>${PROJECT_ROOT}\training_interface.m</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\thcr\for_testing" name="splash.png" optional="false">B:\Final yr project\matlab\thcr\thcr\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\thcr\for_testing" name="Tamil_HandwrittenCR.exe" optional="false">B:\Final yr project\matlab\thcr\thcr\for_testing\Tamil_HandwrittenCR.exe</file>
+      <file location="${PROJECT_ROOT}\thcr\for_testing" name="readme.txt" optional="true">B:\Final yr project\matlab\thcr\thcr\for_testing\readme.txt</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2016a</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="embeddedcoder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.2</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
